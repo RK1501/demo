@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d4892e318c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/graphStyle.css">
+  <title>PMC Dashboard</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand pmc-logo-icon" href="#"><img src="./assets/images/National_Emblem_of_India 1.png"
+      alt="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+    aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <h5 class="pl-5">Building Developement Department</h5>
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Logout
+          <img src="./assets/images/Frame.png" alt="log-out-icon">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 70 70" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" /> -->
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<body>
+  <div class="px-3 py-4">
+    <h5>Dashboard</h5>
+    <p>Welcome, Administrator !</p>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>PMC UC</h5>
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="svg-icon svg-icon-3x svg-icon-primary d-block my-2">
+              <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Add-user.svg-->
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                  <path d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                  <path d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="#000000" fill-rule="nonzero"></path>
+                </g>
+              </svg>
+              <!--end::Svg Icon-->
+            </span>
+            <a href="#" class="text-primary font-weight-bold mt-2">Total Users : <label id="lbl_tot_users">0</label></a>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">View GR & Circulars</h5>
+                    <p class="card-text">This section helps admin upload all the GR & Circulars Documents.</p>
+                    <a href="http://103.224.247.79:8181/dev/gr_beta/view_gr_data.php" class="btn btn-primary">View GR Data</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 20.png" alt="office-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">View GR & Circulars</h5>
+                    <p class="card-text">This section helps admin upload all the GR & Circulars Documents.</p>
+                    <a href="#" class="btn btn-primary">Upload GR Data</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 20.png" alt="office-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>GR & Circulars</h5>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Upload GR & Circulars</h5>
+                    <p class="card-text">This section helps admin upload all the GR & Circulars Documents.</p>
+                    <a href="http://103.224.247.79:8181/dev/gr_beta/update_gr_data.php" class="btn btn-primary">Upload GR Data</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 20.png" alt="office-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">View GR & Circulars</h5>
+                    <p class="card-text">This section helps admin upload all the GR & Circulars Documents.</p>
+                    <a href="http://103.224.247.79:8181/dev/gr_beta/view_gr_data.php" class="btn btn-primary">View GR Data</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 20.png" alt="office-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">View GR & Circulars</h5>
+                    <p class="card-text">This section helps admin upload all the GR & Circulars Documents.</p>
+                    <a href="#" class="btn btn-primary">Upload GR Data</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 20.png" alt="office-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>Certificates</h5>
+        <div class="row mb-4">
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Leval Certficate</h5>
+                    <p class="card-text pb-3">User login</p>
+                    <a href="http://103.224.247.79:8181/map/signin.html" class="btn btn-primary">Login</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 37.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Leval Certificate</h5>
+                    <p class="card-text pb-3">Admin Login</p>
+                    <a href="http://103.224.247.79:8181/map/login.html" class="btn btn-primary">Login</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 37.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Site Plan & Zone Certificate</h5>
+                    <p class="card-text">Admin App to view Siteplan & Zone certificate</p>
+                    <a href="http://hardcastlegis.in/zonepmc_new/Default.aspx" class="btn btn-primary">Login</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 39.png" alt="building-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row  mb-4">
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Zone Certificate Data Entry Tools</h5>
+                    <p class="card-text">This Tool is used by BI/JE to upload Zone Certificate Attribute Data.</p>
+                    <a href="http://hardcastlegis.in/zonepmc_new/Default.aspx" class="btn btn-primary">Login</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 9.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Know Your Officer Transfer</h5>
+                    <p class="card-text pb-3">This panel allows to update current Officer List.</p>
+                    <a href="http://103.224.247.79:8181/dev/pmc_dev/admin_app/officer_list.html" class="btn btn-primary">Upload Data</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 9.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">DP Implementation</h5>
+                    <p class="card-text">Software Helps in finding reservation and its relevant documents.</p>
+                    <a href="http://hardcastle.co.in/PHP_WEB/pmc_app/op_auth_signin.php" class="btn btn-primary">Sign In</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 3.png" alt="building-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>PMC</h5>
+        <div class="row mb-4">
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">DP on Map</h5>
+                    <p class="card-text pb-3">View paper Dp on Map.</p>
+                    <a href="https://hardcastlegis.com/GIS-Company/PMC/Building/overlap.html" class="btn btn-primary">Sign In</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 41.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">PMC BP Officer</h5>
+                    <p class="card-text pb-3">Know Your Officer</p>
+                    <a href="https://hardcastlegis.com/GIS-Company/PMC/Building/PMC-BP-Officer.html" class="btn btn-primary">Get Started Now</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 43.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">PMC BP Documents</h5>
+                    <p class="card-text">Get Documents</p>
+                    <a href="https://hardcastlegis.com/GIS-Company/PMC/Building/PMC-BP-Documents.html" class="btn btn-primary">Get Now</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 48.png" alt="building-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row  mb-4">
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">PMC Ward Map</h5>
+                    <p class="card-text">Get to now the wards of PMC</p>
+                    <a href="https://hardcastlegis.com/GIS-Company/PMC/Building/PMC-Ward-Map.html" class="btn btn-primary">Find Now</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 4.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">PMC UC</h5>
+                    <p class="card-text pb-3">PMC UC</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.hardcastle.pune_uc" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 45.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Enterprise GIS</h5>
+                    <p class="card-text">Get to view all data on single platform</p>
+                    <a href="http://103.224.247.79:8181/dev/PMC/map_dashboard.php" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 46.png" alt="building-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>Other</h5>
+        <div class="row mb-4">
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">BP Permission File</h5>
+                    <p class="card-text pb-3">Data entry software</p>
+                    <a href="http://115.124.127.208/PMC_FILES/index.php" class="btn btn-primary">Sign In</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 49.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">UC MIS Dashboard</h5>
+                    <p class="card-text pb-3">CE SIR Login Dashboard</p>
+                    <a href="http://115.124.127.208/PMC/PMC_UC_NEW/_IPHONE/PMC_UC/mis/Dashboard.php" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/Group 47.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Properties</h5>
+                    <p class="card-text">Data entry software</p>
+                    <a href="#" class="btn btn-primary">Get Started</a>  <!-- //link not working on old Dashboard -->
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 3.png" alt="building-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>Get Applications</h5>
+        <div class="row mb-4">
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Google Play Store</h5>
+                    <p class="card-text pb-3">Download application for android</p>
+                    <a href="https://play.google.com/store/apps/developer?id=Hardcastle+GIS+Solutions+Private+Limited" class="btn btn-primary">Download</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 2.png" alt="folder-icon" class="card-image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Apple App Store</h5>
+                    <p class="card-text pb-3">Download application for Ios</p>
+                    <a href="https://apps.apple.com/bs/developer/hardcastle-gis-solutions-private-limited/id896720841" class="btn btn-primary">Download</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/images/image 1.png" alt="folder-icon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="row page-footer">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <footer class="font-small blue  text-center">
+        <ul>
+          <li><div class="footer-copyright py-3">© 2022 PMC Building Permission Department</div></li>
+          <li><a href="#.">About</a></li>
+          <li><a href="#.">Team</a></li>
+          <li><a href="#.">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+  <!-- Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

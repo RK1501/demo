@@ -1,0 +1,115 @@
+.ol-viewport 
+	{
+		overflow:auto !important;
+	}
+	#bdy_Popup_legend {
+  position: absolute;
+  z-index: 999;
+  background-color: #FFFFFF;
+  width: 210px;
+  left:0;
+  bottom: 24px;
+  min-height: 25px;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#btn_Popup_legend {
+  position: absolute;
+  z-index: 9999;
+  background-color: #273B4F;
+  width: 210px;
+  left:0;
+  top : 50rem;
+  bottom: 0;
+  min-height: 24px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border:1px;
+  border-color: black;
+}
+.text_cut
+{
+  text-transform: capitalize;
+	font-weight: bold;
+	font-size: 13px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 2.2em;
+	white-space: nowrap;
+	color: white;
+	background-color: #757373;
+	padding: 6px 12px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	margin-left: 10px;
+}
+.legend_img
+{
+margin-left:17px;
+}
+	</style>
+	<style>
+	
+	.ol-popup table {
+color: #323232;
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+.ol-popup table tr:nth-child(odd) {
+background-color: rgba(76,76,76,0.1);
+}
+.ol-popup table tr th {
+width: 35%;
+	text-align: left;
+	border-right: 3px solid rgba(0,0,0,0.05);
+	padding: .5em .7em;
+	word-break: break-word;
+	vertical-align: top;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+.ol-popup table tr td {
+width: 50%;
+padding: .5em .7em;
+	word-break: break-word;
+	vertical-align: top;
+	font-size: 12px;
+	font-weight: 400;
+}
+.ol-popup table tr:nth-child(even) {
+background-color: rgba(76,76,76,0.02);
+}
+.ol-popup-header {
+position: relative;
+	font-size: 12px;
+	align-items: flex-start;
+	justify-content: space-between;
+	display: flex;
+	flex: 0 0 auto;
+}
+.ol-popup-h1 {
+	font-weight: 600;
+	padding: 12px 2px;
+	margin: 0 auto 0 0;
+	display: block;
+	flex: 1;
+	opacity: 0;
+	word-break: break-word;
+	opacity: 1;
+	animation: esri-fade-in 375ms ease-out;
+	font-size: 16px !important;
+ text-transform: capitalize;
+ color:red;
+}
+@media (max-width: 480px) {
+
+#leftlogo {
+   width: 39% !important;
+}
+}

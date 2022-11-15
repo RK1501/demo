@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-light{
+    background-color: #DAF6F3;
+}
+.pmc-logo-icon img{
+    height: 70px;
+}
+.card{
+    background: #DAF6F3;
+    border: none;
+    position: relative;
+}
+.card-image {
+    position: absolute;
+    width: 90px;
+    height: 100px;
+    left: 51px;
+    top: 35px;
+}
+.btn{
+    font-size: 12px;
+    line-height: 17.4px;
+    padding: 10px 41.62px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #04859D;
+    border-color: #04859D;
+}
+h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+}
+p{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23.2px; 
+}
+.footer{
+    background: #DAF6F3;
+    height: 100px;
+}
+.page-footer{
+    background: #DAF6F3;
+    padding: 25px;
+}
+.page-footer div{
+    display: inline;
+}
+.page-footer li{
+    display: inline;
+    list-style: none;
+}
+.page-footer ul > li{
+    margin-left: 30px;
+}
